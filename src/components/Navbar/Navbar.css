@@ -1,0 +1,74 @@
+nav {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 5%;
+}
+
+.navbar-container {
+  background-color: var(--background-main);
+  position: absolute;
+  height: 100vh;
+  width: 25vw;
+  left: 0;
+  top: 0;
+}
+
+.navbar-links {
+  text-transform: capitalize;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 6rem;
+  display: flex;
+  height: 100%;
+  gap: 1rem;
+}
+
+.footwear-links {
+  position: relative;
+}
+
+.link {
+  font-size: 3rem;
+  color: inherit;
+  width: 50%;
+}
+
+.plus-icon {
+  position: absolute;
+  cursor: pointer;
+  font-size: 3rem;
+  margin: 0 1rem;
+  top: 1.2rem;
+}
+
+.footwear-variations {
+  flex-direction: column;
+  margin-left: 3rem;
+  display: flex;
+}
+
+.sub-link {
+  font-size: 2.5rem;
+  color: inherit;
+}
+
+.hamburger-container {
+  cursor: pointer;
+  height: 4rem;
+  width: 4rem;
+}
+
+.navbar-socials {
+  margin: 2rem 0;
+}
+
+.navbar-social-icon {
+  cursor: pointer;
+  margin: 0 0.2rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}

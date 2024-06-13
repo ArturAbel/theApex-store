@@ -1,0 +1,11 @@
+:root {
+  /* Background colors */
+  --background-secondary: rgb(40, 39, 37);
+  --background-main: rgb(227, 226, 221);
+
+  /* Fonts */
+  --trekCare-font-family: "Familjen Grotesk", sans-serif;
+}
+
+/* Fonts import */
+@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap");

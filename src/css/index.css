@@ -1,0 +1,22 @@
+body {
+  font-family: var(--trekCare-font-family);
+  background-color: var(--background-main);
+}
+
+.distressed {
+  background-image: repeating-radial-gradient(
+    circle at 25% 35%,
+    white,
+    rgb(223, 223, 223) 0.00085px
+  );
+  animation: static 5s linear infinite;
+}
+
+@keyframes static {
+  from {
+    background-size: 150%;
+  }
+  to {
+    background-size: 200%;
+  }
+}
