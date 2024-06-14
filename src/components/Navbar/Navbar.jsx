@@ -3,6 +3,7 @@ import {
   TiSocialFacebook,
   TiSocialLinkedin,
 } from "react-icons/ti";
+import { hamburger } from "../../utilities/variables";
 import { LuPlus, LuMinus } from "react-icons/lu";
 import { FaWhatsapp } from "react-icons/fa6";
 import { Link } from "react-router-dom";
@@ -17,7 +18,7 @@ export const Navbar = () => {
   const handleOpenNavbar = () => {
     setNavbar(true);
   };
-  
+
   const handleCloseNavbar = () => {
     setNavbar(false);
   };
@@ -31,12 +32,13 @@ export const Navbar = () => {
       <img
         onMouseEnter={handleOpenNavbar}
         className="hamburger-container"
-        src="../../assets/images/navbar/hamburger.svg"
+        src={hamburger}
         alt="hamburger"
       />
       {navbar && (
         <div className="navbar-container" onMouseLeave={handleCloseNavbar}>
           <div className="navbar-links">
+            <h3 className="navbar-logo">The Apex®</h3>
             <Link className="link" to={"/"}>
               home
             </Link>

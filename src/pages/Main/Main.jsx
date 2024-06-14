@@ -5,9 +5,11 @@ import "./Main.css";
 
 export const Main = () => {
   return (
-    <section className="main-section">
+    <>
       <Navbar />
-      <Outlet />
-    </section>
+      <section className="main-section">
+        <Outlet />
+      </section>
+    </>
   );
 };

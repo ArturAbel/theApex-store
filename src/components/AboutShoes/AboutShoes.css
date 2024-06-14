@@ -1,0 +1,41 @@
+.about-shoes-section {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.about-shoes-content {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10rem;
+  display: flex;
+  height: 100%;
+  width: 50%;
+  gap: 2rem;
+}
+
+.about-shoes-image {
+  height: 100%;
+  width: 50%;
+}
+
+.about-shoes-image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.about-shoes-title {
+  text-transform: uppercase;
+  font-size: 4vh;
+}
+.about-shoes-text {
+  font-size: 2.5vh;
+  line-height: 1;
+  margin-left: 2rem;
+}
+.about-shoes-plus {
+  font-size: 2.5vh;
+  margin-right: 1rem;
+}

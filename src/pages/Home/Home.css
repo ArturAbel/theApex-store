@@ -1,8 +1,6 @@
 .home-section {
-   background-color: var(--background-main);
-   justify-content: center;
-   align-items: center;
-   display: flex;
-   height: 100vh;
-   width: 95%;
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+  width: 100%;
 }

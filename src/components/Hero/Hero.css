@@ -1,0 +1,74 @@
+.hero-section {
+  background-color: var(--background-main);
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 3rem 0;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero-logo {
+  height: 4rem;
+  width: 4rem;
+}
+
+.hero-image {
+  filter: drop-shadow(1px 37px 35px #000000);
+  animation: moving 4s linear infinite;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  height: 85vh;
+  width: 51vw;
+  left: 50%;
+  top: 50%;
+}
+
+.hero-slogan {
+  text-transform: capitalize;
+  display: inline-block;
+  letter-spacing: -1px;
+  text-align: start;
+  font-weight: 700;
+  font-size: 8vh;
+  line-height: 1.1;
+  margin-left: 75%;
+  display: flex;
+  width: 100%;
+}
+
+.hero-link {
+  padding-top: 1rem;
+  align-self: center;
+  position: relative;
+  font-weight: 400;
+  margin-left: 3rem;
+  cursor: pointer;
+  font-size: 2rem;
+  color: inherit;
+  display: flex;
+}
+
+.hero-arrow-icon {
+  transition: transform 0.3s ease;
+  vertical-align: middle;
+  padding-top: 1.2rem;
+  margin-left: 0.5rem;
+  height: 100%;
+  width: 100%;
+}
+
+.hero-link:hover .hero-arrow-icon {
+  transform: translateX(10px);
+}
+
+@keyframes moving {
+  50% {
+    top: 53%;
+  }
+  100% {
+    top: 50%;
+  }
+}
