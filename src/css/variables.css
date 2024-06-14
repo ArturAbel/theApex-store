@@ -1,7 +1,7 @@
 :root {
   /* Background colors */
-  --background-secondary: rgb(40, 39, 37);
   --background-main: rgb(227, 226, 221);
+  --background-secondary: rgba(40, 39, 37,1);
   --background-white: rgb(255, 255, 255);
   /* Fonts */
   --trekCare-font-family: "Inconsolata", sans-serif;

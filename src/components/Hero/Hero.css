@@ -27,7 +27,6 @@
 }
 
 .hero-slogan {
-  text-transform: capitalize;
   display: inline-block;
   letter-spacing: -1px;
   text-align: start;

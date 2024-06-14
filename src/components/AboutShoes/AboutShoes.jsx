@@ -1,3 +1,4 @@
+import { aboutShoesImage } from "../../utilities/variables";
 import { PiPlusBold } from "react-icons/pi";
 
 import "./AboutShoes.css";
@@ -33,7 +34,7 @@ export const AboutShoes = () => {
             The apex® shoes are built to last. the materials used are resistant
             to wear and tear, making them perfect for any adventure. the shoes
             are designed to withstand various weather conditions, from rain to
-            shine, ensuring long-lasting durability. weathe
+            shine, ensuring long-lasting durability.
           </div>
         </div>
         <div>
@@ -50,7 +51,7 @@ export const AboutShoes = () => {
       </div>
 
       <div className="about-shoes-image">
-        <img src="../../../assets/images/aboutShoes/about1.jpg" alt="" />
+        <img src={aboutShoesImage} alt="image" />
       </div>
     </section>
   );

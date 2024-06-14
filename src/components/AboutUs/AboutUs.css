@@ -1,5 +1,40 @@
 .about-us-section {
    display: flex;
+   margin: 2rem 0;
    height: 100vh;
    width: 100%;
  }
+
+.about-us-content {
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   padding: 0 10rem;
+   display: flex;
+   height: 100%;
+   width: 50%;
+   gap: 8rem;
+ }
+ 
+ .about-us-image {
+   height: 100%;
+   width: 50%;
+ }
+ 
+ .about-us-image img {
+   object-fit: cover;
+   height: 100%;
+   width: 100%;
+ }
+ 
+ .about-us-title {
+   text-transform: uppercase;
+   font-size: 3vh;
+  }
+ .about-us-text {
+  margin-top: .5rem;
+   font-size: 2.2vh;
+   line-height: 1.5;
+ }
+
+ 

@@ -1,0 +1,57 @@
+.footwear-section {
+  height: 100vh;
+  width: 100%;
+}
+
+.footwear-header {
+  display: flex;
+  height: 20vh;
+  width: 100%;
+}
+
+.footwear-header-right,
+.footwear-header-left {
+  justify-content: end;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 40%;
+}
+
+.footwear-header-middle {
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 20%;
+}
+
+.footwear-logo {
+  height: 4rem;
+  width: 4rem;
+  margin-top: 1.5rem;
+}
+
+.footwear-title {
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+
+.footwear-icons {
+  margin-right: 5vw;
+  display: flex;
+  gap: 2rem;
+}
+
+.footwear-icon:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.footwear-main{
+   background-color: beige;
+   height: 70vh;
+   width: 95vw;
+}

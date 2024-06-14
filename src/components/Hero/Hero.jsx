@@ -17,7 +17,7 @@ export const Hero = () => {
         <h4 className="hero-slogan">
           of Comfort
           <a href="#" className="hero-link">
-            shop here
+            Shop Here
             <div className="hero-arrow-icon">
               <MdArrowForward />
             </div>

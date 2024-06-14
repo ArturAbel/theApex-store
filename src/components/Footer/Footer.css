@@ -1,0 +1,105 @@
+.footer {
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.footer-form-container {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  height: 60vh;
+  width: 100%;
+}
+
+.footer-form {
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  height: 30rem;
+  width: 40rem;
+}
+.footer-form-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3.5rem;
+  line-height: 1.1;
+}
+
+.footer-input {
+  background-color: transparent;
+  font-family: var(--trekCare-font-family);
+  font-size: 1.7rem;
+  border: none;
+  height: 4rem;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.footer-input:focus,
+.footer-input:focus {
+  outline: none;
+}
+
+.footer-button {
+  font-family: var(--trekCare-font-family);
+  background-color: var(--background-main);
+  font-size: 1.7rem;
+  width: 100%;
+  height: 4rem;
+  border: none;
+}
+
+.footer-button:hover {
+  filter: brightness(0.9);
+  cursor: pointer;
+}
+
+.footer-details-container {
+  flex-direction: column;
+  padding-left: 10vw;
+  display: flex;
+  height: 40vh;
+  width: 100%;
+}
+.footer-socials-links {
+  flex-direction: column;
+  display: flex;
+  cursor: pointer;
+  width: 100%;
+}
+
+.footer-link {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: inherit;
+  width: 20%;
+}
+
+.footer-arrow {
+  transition: transform 0.3s ease;
+  vertical-align: middle;
+  visibility: hidden;
+  width: 3rem;
+  font-size: 1.5rem;
+}
+
+.footer-link:hover .footer-arrow {
+  transform: translateX(10px);
+  visibility: visible;
+}
+
+.footer-address {
+  width: 25%;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.footer-rights {
+  margin-right: 2rem;
+  font-size: 1.4rem;
+  text-align: end;
+}

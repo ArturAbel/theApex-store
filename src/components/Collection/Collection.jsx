@@ -26,7 +26,7 @@ export const Collection = () => {
         <a className="collection-link" href="#">
           water proof <MdArrowForward className="collection-arrow-icon" />
         </a>
-         <img className="collection-image" src={collectionImage3} alt="image" />
+        <img className="collection-image" src={collectionImage3} alt="image" />
       </div>
       <div
         className="
