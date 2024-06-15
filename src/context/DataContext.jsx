@@ -1,4 +1,5 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
+import { footwearURL } from "../utilities/variables";
 import axios from "axios";
 
 const DataContext = createContext();
@@ -10,10 +11,45 @@ export const DataProvider = ({ children }) => {
 
   const fetchProducts = async () => {
     setLoading(true);
-
     try {
-      const response = await axios.get("#");
+      const response = await axios.get(footwearURL);
       setProducts(response.data);
+    } catch (error) {
+      setError(error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleAddProduct = async (product) => {
+    setLoading(true);
+    try {
+      const response = await axios.post(footwearURL, product);
+      setProducts(response.data);
+    } catch (error) {
+      setError(error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleUpdateProduct = async (product) => {
+    setLoading(true);
+    try {
+      await axios.put(`${footwearURL}/${product.id}`, product);
+      await fetchProducts();
+    } catch (error) {
+      setError(error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleRemoveProduct = async (product) => {
+    setLoading(true);
+    try {
+      await axios.delete(`${footwearURL}/${product.id}`);
+      await fetchProducts();
     } catch (error) {
       setError(error.message);
     } finally {
@@ -24,4 +60,23 @@ export const DataProvider = ({ children }) => {
   useEffect(() => {
     fetchProducts();
   }, []);
+
+  return (
+    <DataContext.Provider
+      value={{
+        products,
+        loading,
+        error,
+        handleAddProduct,
+        handleUpdateProduct,
+        handleRemoveProduct,
+      }}
+    >
+      {children}
+    </DataContext.Provider>
+  );
+};
+
+export const useDataContext = () => {
+  return useContext(DataContext);
 };

@@ -33,11 +33,6 @@
   margin-top: 1.5rem;
 }
 
-.footwear-title {
-  text-transform: capitalize;
-  font-size: 3rem;
-}
-
 .footwear-icons {
   margin-right: 5vw;
   display: flex;
@@ -48,10 +43,4 @@
   transform: scale(1.1);
   transition: 0.5s;
   cursor: pointer;
-}
-
-.footwear-main{
-   background-color: beige;
-   height: 70vh;
-   width: 95vw;
 }

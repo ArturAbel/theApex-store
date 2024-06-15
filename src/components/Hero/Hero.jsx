@@ -1,5 +1,6 @@
 import { blackLogo, heroImage } from "../../utilities/variables";
 import { MdArrowForward } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 import "./Hero.css";
 
@@ -16,12 +17,12 @@ export const Hero = () => {
         <h4 className="hero-slogan">Reach the Apex </h4>
         <h4 className="hero-slogan">
           of Comfort
-          <a href="#" className="hero-link">
+          <Link to={'footwear/all'} className="hero-link">
             Shop Here
             <div className="hero-arrow-icon">
               <MdArrowForward />
             </div>
-          </a>
+          </Link>
         </h4>
       </div>
     </section>

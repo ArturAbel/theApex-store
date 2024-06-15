@@ -1,0 +1,41 @@
+.admin-section {
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  width: 100%;
+}
+
+.admin-title {
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+
+.admin-add-button {
+  background-color: var(--background-secondary);
+  font-family: var(--trekCare-font-family);
+  border-radius: 10px;
+  font-size: 1.7rem;
+  margin: 2rem 0;
+  color: white;
+  height: 4rem;
+  border: none;
+  width: 20rem;
+}
+
+.admin-add-button:hover {
+  filter: brightness(1.5);
+  cursor: pointer;
+}
+
+.admin-panel-container {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow: scroll;
+  height: 30vw;
+  width: 85vw;
+}

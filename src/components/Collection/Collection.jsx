@@ -4,6 +4,7 @@ import {
   collectionImage3,
 } from "../../utilities/variables";
 import { MdArrowForward } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 import "./Collection.css";
 
@@ -14,18 +15,21 @@ export const Collection = () => {
         design for everyday life
       </div>
       <div className="collection-image-left">
-        <a className="collection-link" href="#">
+        <Link to={"footwear/trail"} className="collection-link">
           trail shoes <MdArrowForward className="collection-arrow-icon" />
-        </a>
+        </Link>
         <img className="collection-image" src={collectionImage1} alt="image" />
       </div>
       <div className="collection-image-middle">
+        <Link to={"footwear/all"} className="collection-link">
+          collection <MdArrowForward className="collection-arrow-icon" />
+        </Link>
         <img className="collection-image" src={collectionImage2} alt="image" />
       </div>
       <div className="collection-image-right">
-        <a className="collection-link" href="#">
+        <Link to={"footwear/water-proof"} className="collection-link">
           water proof <MdArrowForward className="collection-arrow-icon" />
-        </a>
+        </Link>
         <img className="collection-image" src={collectionImage3} alt="image" />
       </div>
       <div
