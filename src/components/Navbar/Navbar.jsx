@@ -1,7 +1,7 @@
 import {
   TiSocialTwitter,
   TiSocialFacebook,
-  TiSocialInstagram ,
+  TiSocialInstagram,
 } from "react-icons/ti";
 import { hamburger } from "../../utilities/variables";
 import { LuPlus, LuMinus } from "react-icons/lu";
@@ -43,7 +43,7 @@ export const Navbar = () => {
               home
             </Link>
             <div className="footwear-links">
-              <Link className="link" to={"/footwear"}>
+              <Link className="link" to={"/footwear/all"}>
                 footwear
               </Link>
 
@@ -55,8 +55,12 @@ export const Navbar = () => {
 
               {footwear && (
                 <div className="footwear-variations">
-                  <Link className="sub-link">trail </Link>
-                  <Link className="sub-link">water proof</Link>
+                  <Link className="sub-link" to={"/footwear/trail"}>
+                    trail
+                  </Link>
+                  <Link className="sub-link" to={"/footwear/water-proof"}>
+                    water proof
+                  </Link>
                 </div>
               )}
             </div>
@@ -66,7 +70,7 @@ export const Navbar = () => {
               <FaWhatsapp className="navbar-social-icon" />
               <TiSocialTwitter className="navbar-social-icon" />
               <TiSocialFacebook className="navbar-social-icon" />
-              <TiSocialInstagram  className="navbar-social-icon" />
+              <TiSocialInstagram className="navbar-social-icon" />
             </div>
           </div>
         </div>

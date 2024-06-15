@@ -1,15 +1,21 @@
+
+// Footwear---------------------------------------------------------------
 import { blackLogo, favoriteImage, cartImage } from "../../utilities/variables";
-import { Outlet } from "react-router-dom";
+import { useDataContext } from "../../context/DataContext";
+import { Product } from "./Product/Product";
 
 import "./Footwear.css";
 
 export const Footwear = () => {
+  const { products } = useDataContext();
+
   return (
     <section className="footwear-section">
       <div className="footwear-header">
         <div className="footwear-header-left"></div>
         <div className="footwear-header-middle">
           <img className="footwear-logo" src={blackLogo} alt="logo" />
+          <h3 className="footwear-title">catalog</h3>
         </div>
         <div className="footwear-header-right">
           <div className="footwear-icons">
@@ -18,7 +24,21 @@ export const Footwear = () => {
           </div>
         </div>
       </div>
-      <Outlet />
+      <div className="footwear-main">
+        {products.map((product) => {
+          const { image, name, type, rate, id } = product;
+          return (
+            <Product
+              key={id}
+              image={image}
+              name={name}
+              type={type}
+              rate={rate}
+            />
+          );
+        })}
+      </div>
     </section>
   );
 };
+// Footwear---------------------------------------------------------------

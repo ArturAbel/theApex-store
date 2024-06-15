@@ -1,0 +1,48 @@
+.footwear-product-container {
+  flex-direction: column;
+  margin-bottom: 3rem;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.footwear-product-image-container,
+.footwear-product-image {
+  align-self: start;
+  border-radius: 10px;
+  transition: 0.5s;
+  height: 30vh;
+  width: 30vh;
+}
+
+.footwear-product-image-container {
+  overflow: hidden;
+}
+
+.footwear-product-name {
+  text-transform: capitalize;
+  background-color: white;
+  margin-top: 0.5rem;
+  align-self: start;
+  font-size: 2rem;
+  padding: 0 0.5rem;
+}
+
+.footwear-product-type {
+  margin-top: 0.5rem;
+
+  font-size: 1.5rem;
+  align-self: start;
+}
+
+.footwear-product-rate {
+  align-self: start;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.footwear-product-container:hover .footwear-product-image {
+  transform: scale(4) rotate(-15deg) translateX(-5rem);
+}

@@ -50,8 +50,11 @@
   cursor: pointer;
 }
 
-.footwear-main{
-   background-color: beige;
-   height: 70vh;
-   width: 95vw;
+.footwear-main {
+  grid-template-columns: repeat(4, 1fr);
+  padding-left: 10%;
+  display: grid;
+  height: 100%;
+  width: 95vw;
+  gap: 1rem;
 }
