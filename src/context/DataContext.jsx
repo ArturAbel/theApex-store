@@ -25,6 +25,7 @@ export const DataProvider = ({ children }) => {
     setLoading(true);
     try {
       const response = await axios.post(footwearURL, product);
+      setProducts(response.data);
     } catch (error) {
       setError(error.message);
     } finally {
