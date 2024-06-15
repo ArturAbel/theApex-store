@@ -1,0 +1,75 @@
+.shoe-section {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 80vh;
+  width: 100%;
+}
+
+.shoe-image-container {
+  height: 100%;
+  width: 40%;
+}
+
+.shoe-image-container img {
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+}
+
+.shoe-content-container {
+  padding: 4rem;
+  height: 100%;
+  width: 40%;
+}
+
+.shoe-content-name,
+.shoe-content-price {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+}
+
+.shoe-content-color {
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.shoe-content-description {
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.shoe-content-sub {
+  cursor: pointer;
+  margin: 2rem;
+}
+
+.shoe-content-subtitle {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  margin-top: 2rem;
+}
+
+.shoe-content-button {
+  height: 4.5vh;
+  width: 100%;
+}
+
+.shoe-content-button {
+  font-family: var(--trekCare-font-family);
+  background-color: var(--background-secondary);
+  border-radius: 10px;
+  font-size: 1.7rem;
+  margin: 2rem 0;
+  color: white;
+  height: 4rem;
+  border: none;
+  width: 100%;
+}
+
+.shoe-content-button:hover {
+  filter: brightness(1.5);
+  cursor: pointer;
+}

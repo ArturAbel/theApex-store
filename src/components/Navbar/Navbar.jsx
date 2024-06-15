@@ -65,7 +65,9 @@ export const Navbar = () => {
               )}
             </div>
             <Link className="link">about us</Link>
-            <Link className="link">admin</Link>
+            <Link to={"admin"} className="link">
+              admin
+            </Link>
             <div className="navbar-socials">
               <FaWhatsapp className="navbar-social-icon" />
               <TiSocialTwitter className="navbar-social-icon" />

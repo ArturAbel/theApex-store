@@ -1,0 +1,8 @@
+.admin-section {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  width: 100%;
+}

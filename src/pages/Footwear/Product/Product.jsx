@@ -1,14 +1,20 @@
+
 import "./Product.css";
 
-export const Product = ({ image, name, type, rate }) => {
+export const Product = ({
+  image,
+  name,
+  type,
+  rate,
+}) => {
   return (
-    <div className="footwear-product-container">
+    <section className="footwear-product-container">
       <div className="footwear-product-image-container">
         <img className="footwear-product-image" src={image} alt="" />
       </div>
       <h4 className="footwear-product-name">{name}</h4>
       <h4 className="footwear-product-type">{type}</h4>
       <h4 className="footwear-product-rate">{`€ ${rate}`}</h4>
-    </div>
+    </section>
   );
 };

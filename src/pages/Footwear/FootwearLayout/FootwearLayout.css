@@ -18,4 +18,9 @@
   text-transform: capitalize;
   text-align: center;
   font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.footwear-shoe-link {
+  color: inherit;
 }
