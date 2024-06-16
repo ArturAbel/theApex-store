@@ -12,8 +12,8 @@ export const Home = () => {
       <Hero />
       <Collection />
       <AboutShoes />
-      <AboutUs/>
-      <Footer/>
+      <AboutUs />
+      <Footer />
     </div>
   );
 };

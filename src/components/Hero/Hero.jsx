@@ -6,18 +6,17 @@ import "./Hero.css";
 
 export const Hero = () => {
   return (
-    <section className="hero-section distressed">
+    <section className="hero-section distressed" id="hero">
       <div>
         <img src={blackLogo} alt="logo" className="hero-logo" />
       </div>
       <div>
         <img className="hero-image" src={heroImage} alt="hero image" />
       </div>
-      <div>
-        <h4 className="hero-slogan">Reach the Apex </h4>
+      <div className="hero-slogan-container">
+        <h4 className="hero-slogan"> Crafting Journeys.</h4>
         <h4 className="hero-slogan">
-          of Comfort
-          <Link to={'footwear/all'} className="hero-link">
+          <Link to={"footwear/all"} className="hero-link">
             Shop Here
             <div className="hero-arrow-icon">
               <MdArrowForward />

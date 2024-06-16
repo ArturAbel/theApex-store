@@ -1,6 +1,18 @@
+import { useDataContext } from "../../context/DataContext";
+
 import "./AdminShoeTab.css";
 
-export const AdminShoeTab = ({ handleDisplayUpdate, setProduct, product }) => {
+export const AdminShoeTab = ({
+  handleDisplayUpdate,
+  setInitialProduct,
+  product,
+}) => {
+  const { handleRemoveProduct } = useDataContext();
+
+  const removeProduct = () => {
+    handleRemoveProduct(product);
+  };
+
   const { description, image, name, type, rate, color } = product;
 
   return (
@@ -27,13 +39,15 @@ export const AdminShoeTab = ({ handleDisplayUpdate, setProduct, product }) => {
         <button
           className="shoe-tab-button update"
           onClick={() => {
-            setProduct(product);
+            setInitialProduct(product);
             handleDisplayUpdate();
           }}
         >
           update
         </button>
-        <button className="shoe-tab-button remove">remove</button>
+        <button className="shoe-tab-button remove" onClick={removeProduct}>
+          remove
+        </button>
       </div>
     </div>
   );
