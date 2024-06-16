@@ -1,16 +1,22 @@
 import { AdminShoeTab } from "../../components/AdminShoeTab/AdminShoeTab";
-import { Overlay } from "../../components/Overlay/Overlay";
 import { ProductForm } from "../../components/ProductForm/ProductForm";
+import { Overlay } from "../../components/Overlay/Overlay";
 import { useDataContext } from "../../context/DataContext";
+import { Loader } from "../../components/Loader/Loader";
+import useForm from "../../hooks/useForm";
 import { useState } from "react";
+import { nanoid } from "nanoid";
 
 import "./Admin.css";
 
 export const Admin = () => {
-  const { products, handleAddProduct } = useDataContext();
+  const { handleUpdateProduct, handleAddProduct, products, loading, error } =
+    useDataContext();
+
+  const [initialProduct, setInitialProduct] = useState(null);
   const [displayUpdate, setDisplayUpdate] = useState(false);
   const [displayAdd, setDisplayAdd] = useState(false);
-  const [product, setProduct] = useState({});
+  const { inputProduct, setInputProduct } = useForm();
 
   const handleDisplayAdd = () => {
     setDisplayAdd((previous) => !previous);
@@ -20,13 +26,35 @@ export const Admin = () => {
     setDisplayUpdate((previous) => !previous);
   };
 
+  // Add product
+  const addProduct = (inputProduct) => {
+    const newProduct = {
+      id: nanoid(),
+      ...inputProduct,
+    };
+    handleAddProduct(newProduct);
+  };
+
+  // Update product
+  const updateProduct = (inputProduct) => {
+    const updatedProduct = {
+      ...inputProduct,
+    };
+    handleUpdateProduct(updatedProduct);
+  };
+
   return (
     <section className="admin-section">
       {displayAdd && (
         <>
           <Overlay />
-          <ProductForm handleDisplayForm={handleDisplayAdd} 
-          product={""}/>
+          <ProductForm
+            handleDisplayForm={handleDisplayAdd}
+            setInputProduct={setInputProduct}
+            handleFormAction={addProduct}
+            product={inputProduct} //new
+            text={"Add"}
+          />
         </>
       )}
       {displayUpdate && (
@@ -34,7 +62,10 @@ export const Admin = () => {
           <Overlay />
           <ProductForm
             handleDisplayForm={handleDisplayUpdate}
-            product={product}
+            setInputProduct={setInputProduct}
+            handleFormAction={updateProduct}
+            product={initialProduct} //old product
+            text={"Update"}
           />
         </>
       )}
@@ -42,18 +73,23 @@ export const Admin = () => {
       <button onClick={handleDisplayAdd} className="admin-add-button">
         Add Product
       </button>
-      <div className="admin-panel-container">
-        {products.map((product) => {
-          return (
-            <AdminShoeTab
-              handleDisplayUpdate={handleDisplayUpdate}
-              setProduct={setProduct}
-              product={product}
-              key={product.id}
-            />
-          );
-        })}
-      </div>
+
+      {loading ? (
+        <Loader />
+      ) : (
+        <div className="admin-panel-container">
+          {products.map((product) => {
+            return (
+              <AdminShoeTab
+                handleDisplayUpdate={handleDisplayUpdate}
+                setInitialProduct={setInitialProduct}
+                product={product}
+                key={product.id}
+              />
+            );
+          })}
+        </div>
+      )}
     </section>
   );
 };

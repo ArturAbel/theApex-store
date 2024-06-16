@@ -31,9 +31,9 @@
   letter-spacing: -1px;
   text-align: start;
   font-weight: 700;
-  font-size: 8vh;
   line-height: 1.1;
   margin-left: 75%;
+  font-size: 8vh;
   display: flex;
   width: 100%;
 }
@@ -69,5 +69,48 @@
   }
   100% {
     top: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 380px) {
+  .hero-image {
+    height: 40vh;
+    width: 50vw;
+  }
+  .hero-slogan-container {
+    margin-bottom: 6rem;
+  }
+  .hero-slogan {
+    font-size: 5rem;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .hero-image {
+    height: 30vh;
+    width: 40vw;
+    left: 60%;
+    top: 40%;
+  }
+  @keyframes moving {
+    50% {
+      top: 43%;
+    }
+    100% {
+      top: 40%;
+    }
+  }
+  .hero-slogan-container {
+    margin-bottom: 6rem;
+  }
+  .hero-slogan {
+    font-size: 3rem;
+    margin-left: 0;
+    width: 100%;
+  }
+  .hero-link {
+    align-items: flex-start;
+    width: 20rem;
   }
 }

@@ -37,4 +37,28 @@
    line-height: 1.5;
  }
 
- 
+ @media screen and (max-width: 768px) and (min-width: 380px) {
+  .about-us-title {
+    font-size: 2vh;
+  }
+  .about-us-text{
+    font-size:1.5vh;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .about-us-section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .about-us-image {
+    height: 100%;
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .about-us-content {
+    width: 100%;
+    padding:0 5rem;
+  }
+}

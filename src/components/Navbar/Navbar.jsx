@@ -10,10 +10,12 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 import "./Navbar.css";
+import { HashLink } from "react-router-hash-link";
 
 export const Navbar = () => {
-  const [navbar, setNavbar] = useState(false);
   const [footwear, setFootwear] = useState(false);
+  const [navbar, setNavbar] = useState(false);
+  const [selectLink, setSelectLink] = useState();
 
   const handleOpenNavbar = () => {
     setNavbar(true);
@@ -39,9 +41,9 @@ export const Navbar = () => {
         <div className="navbar-container" onMouseLeave={handleCloseNavbar}>
           <div className="navbar-links">
             <h3 className="navbar-logo">The Apex®</h3>
-            <Link className="link" to={"/"}>
+            <HashLink className="link" to={"/#hero"}>
               home
-            </Link>
+            </HashLink>
             <div className="footwear-links">
               <Link className="link" to={"/footwear/all"}>
                 footwear
@@ -64,7 +66,9 @@ export const Navbar = () => {
                 </div>
               )}
             </div>
-            <Link className="link">about us</Link>
+            <HashLink to={"/#about"} className="link">
+              about us
+            </HashLink>
             <Link to={"admin"} className="link">
               admin
             </Link>

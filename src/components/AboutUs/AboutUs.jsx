@@ -4,7 +4,7 @@ import "./AboutUs.css";
 
 export const AboutUs = () => {
   return (
-    <section className="about-us-section">
+    <section className="about-us-section" id="about">
       <div className="about-us-image">
         <img src={aboutUsImage} alt="image" />
       </div>
@@ -26,8 +26,8 @@ export const AboutUs = () => {
             We invite you to join the Apex® community and share in our passion
             for exploration and discovery. Follow us on social media, sign up
             for our newsletter, and stay connected with the latest news, product
-            launches, and adventure stories. Together, lets conquer new
-            horizons and make every step an adventure.
+            launches, and adventure stories. Together, lets conquer new horizons
+            and make every step an adventure.
           </div>
         </div>
       </div>

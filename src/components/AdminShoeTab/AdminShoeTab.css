@@ -44,17 +44,18 @@
 }
 
 .update {
-  background-color: #a0cfa6;
+  background-color: var(--background-update-button);
 }
 .remove {
-  background-color: #e7a89c;
+  background-color: var(--background-remove-button);
 }
 
 .shoe-tab-button {
   text-transform: capitalize;
+  border-radius: 5px;
   cursor: pointer;
+  height: 2.8rem;
   border: none;
-  height: 3rem;
   width: 7rem;
 }
 

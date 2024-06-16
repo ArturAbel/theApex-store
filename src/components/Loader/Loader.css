@@ -1,0 +1,26 @@
+.loader {
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  gap: 10rem;
+}
+
+.loader-title {
+  font-size: 3rem;
+}
+
+.loader-logo {
+  animation: rotate 2s infinite linear;
+  height: 30rem;
+  width: 30rem;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}

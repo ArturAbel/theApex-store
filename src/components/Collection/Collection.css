@@ -62,3 +62,37 @@
 .collection-link:hover .collection-arrow-icon {
   transform: translateX(10px);
 }
+
+@media screen and (max-width: 380px) {
+  .collection-section {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 100%;
+  }
+
+  .collection-image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .collection-text-left {
+    grid-area: 2;
+  }
+  .collection-image-left {
+    grid-area: 1;
+    position: relative;
+  }
+  .collection-image-middle {
+    grid-area: 3;
+    position: relative;
+  }
+  .collection-image-right {
+    grid-area: 5;
+    position: relative;
+  }
+  .collection-text-right {
+    grid-area: 4;
+  }
+}
+

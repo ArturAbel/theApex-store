@@ -24,8 +24,8 @@ export const DataProvider = ({ children }) => {
   const handleAddProduct = async (product) => {
     setLoading(true);
     try {
-      const response = await axios.post(footwearURL, product);
-      setProducts(response.data);
+      await axios.post(footwearURL, product);
+      await fetchProducts();
     } catch (error) {
       setError(error.message);
     } finally {
@@ -64,12 +64,12 @@ export const DataProvider = ({ children }) => {
   return (
     <DataContext.Provider
       value={{
+        handleRemoveProduct,
+        handleUpdateProduct,
+        handleAddProduct,
         products,
         loading,
         error,
-        handleAddProduct,
-        handleUpdateProduct,
-        handleRemoveProduct,
       }}
     >
       {children}
