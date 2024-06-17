@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import useForm from "../../hooks/useForm";
 
+import "./ProductFormResponsive.css";
 import "./ProductForm.css";
 
 export const ProductForm = ({

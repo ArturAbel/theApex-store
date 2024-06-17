@@ -1,5 +1,6 @@
 import { useDataContext } from "../../context/DataContext";
 
+import "./AdminShoeTabResponsive.css";
 import "./AdminShoeTab.css";
 
 export const AdminShoeTab = ({

@@ -1,9 +1,10 @@
 import { useDataContext } from "../../context/DataContext";
 import { LuChevronDown } from "react-icons/lu";
 import { useParams } from "react-router-dom";
-
-import "./Shoe.css";
 import { useState } from "react";
+
+import "./ShoeResponsive.css";
+import "./Shoe.css";
 
 export const Shoe = () => {
   const { products } = useDataContext();
