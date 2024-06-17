@@ -70,10 +70,12 @@ export const Admin = () => {
         </>
       )}
       <h4 className="admin-title">admin page</h4>
-      <button onClick={handleDisplayAdd} className="admin-add-button">
-        Add Product
-      </button>
-
+      <div className="admin-actions-container">
+        <input className="admin-search-bar" type="text" placeholder="Search"/>
+        <button onClick={handleDisplayAdd} className="admin-add-button">
+          Add Product
+        </button>
+      </div>
       {loading ? (
         <Loader />
       ) : (

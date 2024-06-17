@@ -3,8 +3,8 @@ export const footwearURL =
   "https://666812bef53957909ff661bb.mockapi.io/footwear";
 // Icons
 export const hamburger = "../../assets/images/navbar/hamburger.svg";
-export const favoriteImage = "../assets/images/footwear/favorite.svg";
-export const cartImage = "../assets/images/footwear/cart.svg";
+export const favoriteImage = "../../assets/images/footwear/favorite.svg";
+export const cartImage = "../../assets/images/footwear/cart.svg";
 export const blackLogo = "../../assets/images/logo/black.png";
 // Images
 export const collectionImage1 = `../../assets/images/collection/collection1.jpg`;
