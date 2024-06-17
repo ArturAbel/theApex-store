@@ -3,7 +3,6 @@ import { LuChevronDown } from "react-icons/lu";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 
-import "./ShoeResponsive.css";
 import "./Shoe.css";
 
 export const Shoe = () => {

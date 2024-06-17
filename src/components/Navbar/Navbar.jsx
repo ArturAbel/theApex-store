@@ -10,7 +10,6 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-import "./NavbarResponsive.css";
 import "./Navbar.css";
 
 export const Navbar = () => {

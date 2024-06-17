@@ -1,15 +1,1 @@
-@media screen and (max-width: 768px) and (min-width: 412px) {
-  .footwear-layout {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-@media screen and (max-width: 412px) {
-  .footwear-layout {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .footwear-shoe-link {
-    color: inherit;
-  }
-}

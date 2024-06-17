@@ -4,7 +4,6 @@ import { ALL_SHOES } from "../../../utilities/variables";
 import { Product } from "../Product/Product";
 import { Link } from "react-router-dom";
 
-import "./FootwearLayoutResponsive.css";
 import "./FootwearLayout.css";
 
 export const FootwearLayout = ({ text }) => {
