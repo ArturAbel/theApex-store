@@ -1,4 +1,3 @@
-import "./ProductResponsive.css";
 import "./Product.css";
 
 export const Product = ({ image, name, type, rate }) => {

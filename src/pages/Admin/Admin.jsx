@@ -7,7 +7,6 @@ import useForm from "../../hooks/useForm";
 import { useState } from "react";
 import { nanoid } from "nanoid";
 
-import "./AdminResponsive.css";
 import "./Admin.css";
 
 export const Admin = () => {

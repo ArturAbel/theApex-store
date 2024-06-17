@@ -1,38 +1,68 @@
 .about-us-section {
-   display: flex;
-   margin: 2rem 0;
-   height: 100vh;
-   width: 100%;
- }
+  display: flex;
+  margin: 2rem 0;
+  height: 100vh;
+  width: 100%;
+}
 
 .about-us-content {
-   justify-content: center;
-   flex-direction: column;
-   align-items: center;
-   padding: 0 10rem;
-   display: flex;
-   height: 100%;
-   width: 50%;
-   gap: 8rem;
- }
- 
- .about-us-image {
-   height: 100%;
-   width: 50%;
- }
- 
- .about-us-image img {
-   object-fit: cover;
-   height: 100%;
-   width: 100%;
- }
- 
- .about-us-title {
-   text-transform: uppercase;
-   font-size: 3vh;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10rem;
+  display: flex;
+  height: 100%;
+  width: 50%;
+  gap: 8rem;
+}
+
+.about-us-image {
+  height: 100%;
+  width: 50%;
+}
+
+.about-us-image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.about-us-title {
+  text-transform: uppercase;
+  font-size: 3vh;
+}
+.about-us-text {
+  margin-top: 0.5rem;
+  font-size: 2.2vh;
+  line-height: 1.5;
+}
+
+/* -------------- */
+/* Responsiveness */
+/* -------------- */
+
+@media screen and (max-width: 768px) and (min-width: 412px) {
+  .about-us-title {
+    font-size: 2vh;
   }
- .about-us-text {
-  margin-top: .5rem;
-   font-size: 2.2vh;
-   line-height: 1.5;
- }
+  .about-us-text {
+    font-size: 1.5vh;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .about-us-section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .about-us-image {
+    height: 100%;
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .about-us-content {
+    width: 100%;
+    padding: 0 5rem;
+  }
+}

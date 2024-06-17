@@ -1,6 +1,5 @@
 import { aboutUsImage } from "../../utilities/variables";
 
-import "./AboutUsResponsive.css";
 import "./AboutUs.css";
 
 export const AboutUs = () => {

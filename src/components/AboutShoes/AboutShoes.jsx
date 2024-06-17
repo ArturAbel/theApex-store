@@ -1,7 +1,6 @@
 import { aboutShoesImage } from "../../utilities/variables";
 import { PiPlusBold } from "react-icons/pi";
 
-import "./AboutShoesResposnsive.css";
 import "./AboutShoes.css";
 
 export const AboutShoes = () => {

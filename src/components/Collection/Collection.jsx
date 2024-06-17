@@ -6,7 +6,6 @@ import {
 import { MdArrowForward } from "react-icons/md";
 import { Link } from "react-router-dom";
 
-import "./CollectionResponsive.css";
 import "./Collection.css";
 
 export const Collection = () => {
