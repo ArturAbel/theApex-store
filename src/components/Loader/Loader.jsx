@@ -6,7 +6,6 @@ export const Loader = () => {
     <>
       <div className="loader">
         <h2 className="loader-title">Loading...</h2>
-
         <img className="loader-logo" src={blackLogo} alt="loader" />
       </div>
     </>

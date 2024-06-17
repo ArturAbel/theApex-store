@@ -46,10 +46,13 @@
 .footer-button {
   font-family: var(--trekCare-font-family);
   background-color: var(--background-main);
+  text-align: center;
+  padding: 0.5rem 0;
   font-size: 1.7rem;
-  width: 100%;
-  height: 4rem;
+  color: inherit;
   border: none;
+  height: 4rem;
+  width: 100%;
 }
 
 .footer-button:hover {
@@ -66,8 +69,9 @@
 }
 .footer-socials-links {
   flex-direction: column;
-  display: flex;
+  margin-bottom: 2rem;
   cursor: pointer;
+  display: flex;
   width: 100%;
 }
 
@@ -99,9 +103,12 @@
 }
 
 .footer-rights {
-  margin-right: 2rem;
+  margin-right: 5rem;
   font-size: 1.4rem;
   text-align: end;
+}
+
+.footer-paying-options-container {
 }
 
 /* -------------- */
