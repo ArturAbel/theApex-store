@@ -4,13 +4,14 @@ import {
   TiSocialInstagram,
 } from "react-icons/ti";
 import { hamburger } from "../../utilities/variables";
+import { HashLink } from "react-router-hash-link";
 import { LuPlus, LuMinus } from "react-icons/lu";
 import { FaWhatsapp } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
+import "./NavbarResponsive.css";
 import "./Navbar.css";
-import { HashLink } from "react-router-hash-link";
 
 export const Navbar = () => {
   const [footwear, setFootwear] = useState(false);

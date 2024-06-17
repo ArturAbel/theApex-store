@@ -1,12 +1,7 @@
-
+import "./ProductResponsive.css";
 import "./Product.css";
 
-export const Product = ({
-  image,
-  name,
-  type,
-  rate,
-}) => {
+export const Product = ({ image, name, type, rate }) => {
   return (
     <section className="footwear-product-container">
       <div className="footwear-product-image-container">

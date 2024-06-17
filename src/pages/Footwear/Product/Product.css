@@ -47,25 +47,3 @@
   transform: scale(4) rotate(-15deg) translateX(-5rem);
 }
 
-@media screen and (max-width: 768px) and (min-width: 380px) {
-  .footwear-product-container {
-    height: 80%;
-    width: 50%;
-  }
-}
-@media screen and (max-width: 380px) {
-  .footwear-product-image-container {
-    height:100%;
-    width: 100%;
-  }
-  .footwear-product-image {
-    height: 20vh;
-    width: 20vh;
-  }
-  .footwear-product-name{
-    font-size: 1.5rem;
-  }
-  .footwear-product-type{
-    font-size: 1.3rem;
-  }
-}

@@ -1,0 +1,69 @@
+@media screen and (max-width: 768px) and (min-width: 412px) {
+  nav {
+    width: 8vw;
+  }
+  .navbar-container {
+    width: 20vw;
+  }
+  .navbar-links {
+    margin-left: 3rem;
+  }
+
+  .plus-icon {
+    font-size: 1.5rem;
+  }
+
+  .link {
+    font-size: 2rem;
+  }
+  .sub-link {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  nav {
+    justify-content: flex-start;
+    padding-top: 5rem;
+    width: 8vw;
+  }
+  .navbar-container {
+    padding-top: 5rem;
+    width: 25vw;
+  }
+
+  .hamburger-container {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.5rem;
+  }
+
+  .navbar-links {
+    justify-content: flex-start;
+    position: relative;
+    margin-left: 1rem;
+    gap: 2rem;
+  }
+
+  .plus-icon {
+    font-size: 1rem;
+    height: 100%;
+    position: absolute;
+    left: 6rem;
+    top: 0.2rem;
+  }
+
+  .link {
+    font-size: 1.5rem;
+  }
+  .sub-link {
+    font-size: 1.2rem;
+  }
+  .navbar-social-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}

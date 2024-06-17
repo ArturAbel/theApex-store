@@ -1,5 +1,6 @@
 import { MdArrowForward } from "react-icons/md";
 
+import "./FooterResponsive.css";
 import "./Footer.css";
 
 export const Footer = () => {

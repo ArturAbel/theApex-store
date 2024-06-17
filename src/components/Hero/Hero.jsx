@@ -2,6 +2,7 @@ import { blackLogo, heroImage } from "../../utilities/variables";
 import { MdArrowForward } from "react-icons/md";
 import { Link } from "react-router-dom";
 
+import "./HeroResponsive.css";
 import "./Hero.css";
 
 export const Hero = () => {
