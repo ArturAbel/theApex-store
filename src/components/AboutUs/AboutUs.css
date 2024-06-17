@@ -52,8 +52,8 @@
 
 @media screen and (max-width: 412px) {
   .about-us-section {
+    flex-direction: column-reverse;
     display: flex;
-    flex-direction: column;
     height: 100%;
   }
   .about-us-image {
@@ -62,7 +62,7 @@
     margin: 1rem 0;
   }
   .about-us-content {
-    width: 100%;
     padding: 0 5rem;
+    width: 100%;
   }
 }

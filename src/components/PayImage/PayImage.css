@@ -1,0 +1,8 @@
+.pay-image {
+  margin: 0 0.2rem;
+}
+@media screen and (max-width: 412px) {
+  .pay-image {
+    margin: 1rem 0;
+  }
+}

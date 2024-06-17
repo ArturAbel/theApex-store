@@ -50,6 +50,10 @@
   display: flex;
 }
 
+.hero-link:focus {
+  outline: none;
+}
+
 .hero-arrow-icon {
   transition: transform 0.3s ease;
   vertical-align: middle;

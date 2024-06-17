@@ -124,8 +124,9 @@ nav {
     width: 8vw;
   }
   .navbar-container {
-    padding-top: 5rem;
-    width: 25vw;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding-top: 2rem;
+    width: 28 vw;
   }
 
   .hamburger-container {
@@ -138,26 +139,36 @@ nav {
   }
 
   .navbar-links {
-    justify-content: flex-start;
+    justify-content: center;
     position: relative;
     margin-left: 1rem;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .plus-icon {
+    position: absolute;
     font-size: 1rem;
     height: 100%;
-    position: absolute;
-    left: 6rem;
     top: 0.2rem;
+    left: 6rem;
   }
 
   .link {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .sub-link {
     font-size: 1.2rem;
   }
+  .navbar-socials {
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    height: 10rem;
+    height: 100%;
+    gap: 1rem;
+  }
+
   .navbar-social-icon {
     height: 1.5rem;
     width: 1.5rem;

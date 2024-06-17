@@ -11,7 +11,6 @@ export const ProductForm = ({
 }) => {
   const { inputProduct, setInputProduct, handleInputChange } = useForm({});
   const { name, type, rate, color, image, description } = inputProduct;
-  const [isValid, setIsValid] = useState(true);
 
   useEffect(() => {
     setInputProduct(product);

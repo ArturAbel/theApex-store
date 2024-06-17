@@ -1,4 +1,7 @@
+import { payingImages } from "../../utilities/variables";
 import { MdArrowForward } from "react-icons/md";
+import { PayImage } from "../PayImage/PayImage";
+import { Link } from "react-router-dom";
 
 import "./Footer.css";
 
@@ -21,9 +24,9 @@ export const Footer = () => {
             placeholder="Last Name"
           />
           <input className="footer-input" type="email" placeholder="Email" />
-          <button className="footer-button" type="submit">
+          <Link className="footer-button" type="submit" to={"submit"}>
             Submit
-          </button>
+          </Link>
         </form>
       </div>
       <div className="footer-details-container">
@@ -49,6 +52,11 @@ export const Footer = () => {
           </p>
         </div>
         <p className="footer-rights">© 2024 The Apex®</p>
+        <div className="footer-paying-options-container">
+          {payingImages.map((image) => (
+            <PayImage key={image} url={image} />
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -1,10 +1,6 @@
-import {
-  ALL_SHOES,
-  TRAIL_SHOES,
-  WATER_PROOF_SHOES,
-} from "./utilities/variables";
 import { FootwearLayout } from "./pages/Footwear/FootwearLayout/FootwearLayout";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { FooterForm } from "./components/FooterForm/FooterForm";
 import { AboutUs } from "./components/AboutUs/AboutUs";
 import { DataProvider } from "./context/DataContext";
 import { Footwear } from "./pages/Footwear/Footwear";
@@ -12,6 +8,11 @@ import { Admin } from "./pages/Admin/Admin";
 import { Shoe } from "./pages/Shoe/Shoe";
 import { Main } from "./pages/Main/Main";
 import { Home } from "./pages/Home/Home";
+import {
+  WATER_PROOF_SHOES,
+  TRAIL_SHOES,
+  ALL_SHOES,
+} from "./utilities/variables";
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
       {
         path: "footwear",
         element: <Footwear />,
-        children: [
+        children: [ 
           {
             path: "all",
             element: <FootwearLayout text={ALL_SHOES} />,
@@ -40,6 +41,7 @@ const router = createBrowserRouter([
       },
       { path: "/", element: <AboutUs /> },
       { path: "admin", element: <Admin /> },
+      { path: "submit", element: <FooterForm /> },
     ],
   },
 ]);
