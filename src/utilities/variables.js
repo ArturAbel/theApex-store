@@ -3,8 +3,8 @@ export const footwearURL =
   "https://666812bef53957909ff661bb.mockapi.io/footwear";
 // Icons
 export const hamburger = "../../assets/images/navbar/hamburger.svg";
-export const favoriteImage = "../assets/images/footwear/favorite.svg";
-export const cartImage = "../assets/images/footwear/cart.svg";
+export const favoriteImage = "../../assets/images/footwear/favorite.svg";
+export const cartImage = "../../assets/images/footwear/cart.svg";
 export const blackLogo = "../../assets/images/logo/black.png";
 // Images
 export const collectionImage1 = `../../assets/images/collection/collection1.jpg`;
@@ -14,6 +14,7 @@ export const aboutShoesImage = "../../../assets/images/aboutShoes/about1.jpg";
 export const aboutUsImage = "../../../assets/images/aboutUs/us1.jpg";
 export const heroImage = "../../assets/images/hero/hero.png";
 // Constant
+export const ERROR_MESSAGE = "We are sorry, the data is not available!";
 export const WATER_PROOF_SHOES = "water proof";
 export const ALL_SHOES = "catalog";
 export const TRAIL_SHOES = "trail";

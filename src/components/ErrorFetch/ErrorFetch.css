@@ -1,0 +1,8 @@
+.error-fetch-section {
+  justify-content: center;
+  margin-top: 20vh;
+  font-size: 5rem;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
