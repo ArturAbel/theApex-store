@@ -1,7 +1,9 @@
 import { AdminShoeTab } from "../../components/AdminShoeTab/AdminShoeTab";
 import { ProductForm } from "../../components/ProductForm/ProductForm";
+import { ErrorFetch } from "../../components/ErrorFetch/ErrorFetch";
 import { Overlay } from "../../components/Overlay/Overlay";
 import { useDataContext } from "../../context/DataContext";
+import { ERROR_MESSAGE } from "../../utilities/variables";
 import { Loader } from "../../components/Loader/Loader";
 import useForm from "../../hooks/useForm";
 import { useState } from "react";
@@ -12,11 +14,13 @@ import "./Admin.css";
 export const Admin = () => {
   const { handleUpdateProduct, handleAddProduct, products, loading, error } =
     useDataContext();
-
   const [initialProduct, setInitialProduct] = useState(null);
   const [displayUpdate, setDisplayUpdate] = useState(false);
   const [displayAdd, setDisplayAdd] = useState(false);
   const { inputProduct, setInputProduct } = useForm();
+  const [query, setQuery] = useState("");
+
+
 
   const handleDisplayAdd = () => {
     setDisplayAdd((previous) => !previous);
@@ -41,6 +45,11 @@ export const Admin = () => {
       ...inputProduct,
     };
     handleUpdateProduct(updatedProduct);
+  };
+
+  // Get search input
+  const handleQuery = (e) => {
+    setQuery(e.target.value);
   };
 
   return (
@@ -71,25 +80,38 @@ export const Admin = () => {
       )}
       <h4 className="admin-title">admin page</h4>
       <div className="admin-actions-container">
-        <input className="admin-search-bar" type="text" placeholder="Search"/>
+        <input
+          className="admin-search-bar"
+          placeholder="Search here"
+          type="text"
+          onChange={handleQuery}
+        />
         <button onClick={handleDisplayAdd} className="admin-add-button">
           Add Product
         </button>
       </div>
       {loading ? (
         <Loader />
+      ) : error ? (
+        <ErrorFetch  message={ERROR_MESSAGE}/>
       ) : (
         <div className="admin-panel-container">
-          {products.map((product) => {
-            return (
-              <AdminShoeTab
-                handleDisplayUpdate={handleDisplayUpdate}
-                setInitialProduct={setInitialProduct}
-                product={product}
-                key={product.id}
-              />
-            );
-          })}
+          {products
+            .filter((product) => {
+              return query.toLowerCase() === ""
+                ? product
+                : product.name.toLowerCase().includes(query);
+            })
+            .map((product) => {
+              return (
+                <AdminShoeTab
+                  handleDisplayUpdate={handleDisplayUpdate}
+                  setInitialProduct={setInitialProduct}
+                  product={product}
+                  key={product.id}
+                />
+              );
+            })}
         </div>
       )}
     </section>

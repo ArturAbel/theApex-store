@@ -7,6 +7,7 @@
 }
 
 .shoe-image-container {
+  align-self: baseline;
   height: 80%;
   width: 40%;
 }

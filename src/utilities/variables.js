@@ -14,6 +14,7 @@ export const aboutShoesImage = "../../../assets/images/aboutShoes/about1.jpg";
 export const aboutUsImage = "../../../assets/images/aboutUs/us1.jpg";
 export const heroImage = "../../assets/images/hero/hero.png";
 // Constant
+export const ERROR_MESSAGE = "We are sorry, the data is not available!";
 export const WATER_PROOF_SHOES = "water proof";
 export const ALL_SHOES = "catalog";
 export const TRAIL_SHOES = "trail";
