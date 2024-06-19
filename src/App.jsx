@@ -1,6 +1,7 @@
 import { FootwearLayout } from "./pages/Footwear/FootwearLayout/FootwearLayout";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { FooterForm } from "./components/FooterForm/FooterForm";
+import { NotFound } from "./components/NotFound/NotFound";
 import { AboutUs } from "./components/AboutUs/AboutUs";
 import { DataProvider } from "./context/DataContext";
 import { Footwear } from "./pages/Footwear/Footwear";
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
       {
         path: "footwear",
         element: <Footwear />,
-        children: [ 
+        children: [
           {
             path: "all",
             element: <FootwearLayout text={ALL_SHOES} />,
@@ -42,6 +43,7 @@ const router = createBrowserRouter([
       { path: "/", element: <AboutUs /> },
       { path: "admin", element: <Admin /> },
       { path: "submit", element: <FooterForm /> },
+      { path: "*", element: <NotFound /> },
     ],
   },
 ]);

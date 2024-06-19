@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import useForm from "../../hooks/useForm";
+import { useEffect } from "react";
 
 import "./ProductForm.css";
 

@@ -1,10 +1,10 @@
+import { MdArrowForward } from "react-icons/md";
+import { Link } from "react-router-dom";
 import {
   collectionImage1,
   collectionImage2,
   collectionImage3,
 } from "../../utilities/variables";
-import { MdArrowForward } from "react-icons/md";
-import { Link } from "react-router-dom";
 
 import "./Collection.css";
 
