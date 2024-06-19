@@ -46,7 +46,7 @@
 
 .product-form-input::placeholder {
   font-family: var(--trekCare-font-family);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: black;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .product-rate {
-  width: 10%;
+  width: 12%;
 }
 
 .product-description {

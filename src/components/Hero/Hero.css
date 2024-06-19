@@ -33,7 +33,7 @@
   font-weight: 700;
   line-height: 1.1;
   margin-left: 75%;
-  font-size: 8vh;
+  font-size:7vh;
   display: flex;
   width: 100%;
 }
@@ -96,8 +96,8 @@
 
 @media screen and (max-width: 412px) {
   .hero-image {
-    height: 40vh;
-    width: 80vw;
+    height: 30vh;
+    width: 70vw;
     left: 50%;
     top: 40%;
   }
