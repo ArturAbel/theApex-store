@@ -3,7 +3,7 @@ import { MdArrowForward } from "react-icons/md";
 import { PayImage } from "../PayImage/PayImage";
 import { Link } from "react-router-dom";
 
-import "./Footer.css";
+import "./Footer.css";  
 
 export const Footer = () => {
   return (
