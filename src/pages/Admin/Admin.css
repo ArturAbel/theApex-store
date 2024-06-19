@@ -1,6 +1,6 @@
 .admin-section {
-  flex-direction: column;
   justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
   position: relative;
   height: 100vh;
@@ -24,7 +24,7 @@
   font-family: var(--trekCare-font-family);
   background-color: transparent;
   position: absolute;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   border: none;
   height: 4rem;
   bottom: 20%;
@@ -73,14 +73,6 @@
   .admin-panel-container {
     height: 70vw;
     width: 75vw;
-  }
-  .shoe-tab-name,
-  .shoe-tab-type-container,
-  .shoe-tab-color-container.shoe-tab-rate-container {
-    width: 10vw;
-  }
-  .shoe-tab-description {
-    padding: 0;
   }
 }
 

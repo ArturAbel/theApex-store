@@ -37,16 +37,16 @@
 .collection-text {
   text-transform: uppercase;
   text-align: center;
-  margin: auto 5rem;
+  margin: auto 6rem;
   line-height: 1.4;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .collection-link {
   transform: translate(-50%, -50%);
   text-transform: capitalize;
   position: absolute;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 400;
   color: white;
   left: 50%;

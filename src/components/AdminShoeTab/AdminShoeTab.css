@@ -2,9 +2,9 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
     rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
     rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-  justify-content: space-evenly;
   text-transform: capitalize;
   align-items: center;
+  text-align: center;
   font-size: 1.5rem;
   margin: 2rem 0;
   height: 10rem;
@@ -21,6 +21,7 @@
 .shoe-tab-type-container,
 .shoe-tab-color-container,
 .shoe-tab-rate-container {
+  font-size: 1.2rem;
   width: 15vw;
 }
 
@@ -64,6 +65,18 @@
   filter: brightness(0.8);
 }
 
+@media screen and (max-width: 768px) and (min-width: 412px) {
+  .shoe-tab-name,
+  .shoe-tab-type-container,
+  .shoe-tab-color-container,
+  .shoe-tab-rate-container {
+    width: 10vw;
+  }
+  .shoe-tab-description {
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 412px) {
   .admin-shoe-tab {
     flex-direction: column;
@@ -72,7 +85,7 @@
   }
 
   .shoe-tab-image-container,
-  .shoe-tab-name,
+  .shoe-tab-name-container,
   .shoe-tab-type-container,
   .shoe-tab-color-container,
   .shoe-tab-rate-container,
@@ -81,8 +94,16 @@
     width: 100%;
     text-align: center;
   }
+  .shoe-tab-name {
+    margin-top: 1rem;
+    width: 100%;
+  }
+
   .shoe-tab-description {
-    padding: 1rem;
+    text-align: justify;
+    font-size: 0.9rem;
+    padding: 0 2rem;
+    margin: 1rem 0;
   }
   .shoe-tab-buttons {
     flex-direction: row;

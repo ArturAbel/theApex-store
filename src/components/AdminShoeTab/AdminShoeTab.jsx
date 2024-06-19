@@ -17,11 +17,11 @@ export const AdminShoeTab = ({
 
   return (
     <div className="admin-shoe-tab">
-      <div className="shoe-tab-image-container">
-        <img className="shoe-tab-image" src={image} alt="image" />
-      </div>
       <div className="shoe-tab-name-container">
         <p className="shoe-tab-name">{name}</p>
+      </div>
+      <div className="shoe-tab-image-container">
+        <img className="shoe-tab-image" src={image} alt="image" />
       </div>
       <div className="shoe-tab-type-container">
         <p>{type}</p>

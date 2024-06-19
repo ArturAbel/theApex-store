@@ -24,7 +24,7 @@ export const ProductForm = ({
           <input
             className="product-form-input"
             onChange={handleInputChange}
-            placeholder="Product Name"
+            placeholder="*Product Name"
             value={name}
             type="name"
             name="name"
@@ -40,7 +40,7 @@ export const ProductForm = ({
           <input
             className="product-form-input product-rate"
             onChange={handleInputChange}
-            placeholder="Rate €"
+            placeholder="*Rate €"
             type="number"
             value={rate}
             name="rate"
